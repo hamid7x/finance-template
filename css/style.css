@@ -508,3 +508,149 @@ a{
     cursor: pointer;
 }
 /* End Latest News */
+.pricing{
+    background-color: var(--bg-section-color);
+    padding-top: var(--padding-section-top);
+    padding-bottom: var(--padding-section-bottom);
+}
+.pricing .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+.pricing .box{
+    background-color: var(--light-text-color);
+    border: 1px solid rgba(222, 222, 222, 1);
+    border-radius: 10px;
+    padding: 20px;
+    position: relative;
+}
+
+.pricing .box:nth-child(2)::before{
+    content: "New";
+    background-color: #E77C40;
+    font-size: 24px;
+    font-weight: bold;
+    width: 90px;
+    height: 90px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: -25px;
+    right: 20px;
+    color: var(--light-text-color);
+    
+}
+.pricing .box .text{
+    text-align: center;
+}
+.pricing .box .text .plan{
+    font-size: 24px;
+    text-transform: uppercase;
+    margin: 50px 0 30px;
+}
+.pricing .box:nth-child(2) .plan{
+    text-transform: capitalize;
+}
+.pricing .box .text p{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--second-text-color);
+    width: 150px;
+    margin: auto;
+    line-height: 1.4;
+    margin-bottom: 25px;
+}
+
+.pricing .box .price span{
+    display: block;   
+    text-align: center;
+    color: var(--primary-color); 
+}
+.pricing .box .price span:first-child{
+    font-size: 40px;
+    font-weight: bold;
+}
+.pricing .box .price span:last-child{
+    font-size: 16px;
+    text-transform: capitalize;
+    margin-top: 5px;
+}
+.pricing button{
+    border: none;
+    outline: none;
+    padding: 14px 70px;
+    background-color: var(--primary-color);
+    color: var(--light-text-color);
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: capitalize;
+    border-radius: 5px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: block;
+    width: fit-content;
+    margin: 30px auto;
+    cursor: pointer;
+}
+.pricing .list{
+    padding-left: 20px;
+}
+.pricing .list li{
+    margin-bottom: 15px;
+    font-size: 14px;
+    font-weight: bold;
+    /* color: var(--second-text-color); */
+    color: #777;
+}
+.pricing .list li i{
+    background-color: #2DC071;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 100%;
+    color: var(--light-text-color);
+    margin-right: 10px;
+}
+.pricing .list li:last-child i,
+.pricing .list li:nth-last-of-type(2) i
+{
+    background-color: #BDBDBD;
+}
+/* Start Pricing */
+
+/* Start Contact */
+.contact{
+    background-color: #252B42;
+    height: 250px;
+}
+.contact .container{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    
+    align-items: center;
+}
+.contact .container .text{
+    flex: 1;
+}
+.contact .container .text h3{
+    font-size: 40px;
+    text-transform: capitalize;
+    color: var(--light-text-color);
+}
+.contact .container .text p{
+    font-size: 14px;
+    color: var(--light-text-color);
+    width: 370px;
+    margin-top: 6px;
+}
+.contact .container form{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+}
+/* End Contact */
